@@ -1,0 +1,12 @@
+version: "2"
+server:
+  hostname: server
+  container_name: server
+  image: server
+  build: .
+  command: sh -c 'NODE_ENV=development PORT=8080 node app.js' 
+  ports:
+    - "8080:8080"
+  volumes: #list of folders and files to use 
+    - ${PWD}/server:/usr/local/server
+    - ${PWD}/app.js:/usr/local/app.js
