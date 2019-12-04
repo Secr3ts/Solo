@@ -15,7 +15,8 @@ export default {
   },
   data () {
     return {
-      scColor: '#FF4400'
+      scColor: '#FF4400',
+      warnColor: '#f44336'
     }
   }
 }

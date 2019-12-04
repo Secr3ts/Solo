@@ -15,6 +15,8 @@ import VueAnime from 'vue-animejs'
 
 import { MdButton, MdToolbar } from 'vue-material/dist/components'
 
+import VTooltip from 'v-tooltip'
+
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
 Vue.config.productionTip = false
@@ -28,6 +30,8 @@ Vue.use(MdButton)
 Vue.use(MdToolbar)
 
 Vue.use(KeenUI)
+
+Vue.use(VTooltip)
 
 /* eslint-disable no-new */
 new Vue({

@@ -23,7 +23,7 @@ export default {
   name: 'home-page',
   data () {
     return {
-      platform: process.platform
+      warnColor: this.$parent.warnColor
     }
   },
   methods: {
