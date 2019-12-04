@@ -1,6 +1,6 @@
 <template>
 	<div class="wrapper">
-    <tool-bar></tool-bar>
+    <appHeader></appHeader>
     <div class="container">
       <h1 class="center">Welcome to Solo</h1>
 			<div class="divider divider-sc" id="fDivider"></div>
@@ -17,7 +17,7 @@
 <script>
 import LogoHome from './HomePage/LogoHome'
 import LinkPage from './HomePage/LinkPage'
-import ToolBar from './ToolBar'
+import Header from './Header'
 
 export default {
   name: 'home-page',
@@ -34,7 +34,7 @@ export default {
   components: {
     'logoHome': LogoHome,
     'linkPage': LinkPage,
-    'toolBar': ToolBar
+    'appHeader': Header
   },
   mounted () {
     console.log(this.$router.currentRoute)

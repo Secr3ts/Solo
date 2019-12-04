@@ -1,0 +1,14 @@
+{
+  "routes": [
+    {
+      "name": "Home",
+      "path": "/",
+      "level": "0"
+    },
+    {
+      "name": "Search Page",
+      "path": "/search-page",
+      "level": "1"
+    }
+  ]
+}
