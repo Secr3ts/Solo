@@ -1,25 +1,33 @@
-# solo
+# Solo App
 
-> An SC client
+> A simple Soundcloud Desktop Client.
 
-#### Build Setup
+## Why ? 
+
+I created this app because other apps (like [Auryo](https://github.com/Superjo149/auryo)) aren't supported / doesn't work very well.  
+The purpose of this app is to give an nice UX experience, while enjoying *your* favorite musics since your cosy Desktop
+
+Cheers, [Secr3ts](https://github.com/Secr3ts)/[Allegi4nce](https://discordapp.com/users/378960553508601867)
+
+## Before beginning
+
+If you plan to help to this project, make sure to create another branch then to start a pull request.  
+This will avoid conflicting changes.
+
+# Table of Contents
+
+- [Documentation](#documentation)
+  - [Build Setup](#build-setup)
+
+## Documentation
+
+### Build Setup
 
 ``` bash
-# install dependencies
+# Install dependencies
 npm install
 
-# serve with hot reload at localhost:9080
+# Serve app locally
 npm run dev
 
-# build electron application for production
-npm run build
-
-
-# lint all JS/Vue component files in `src/`
-npm run lint
-
 ```
-
----
-
-This project was generated with [electron-vue](https://github.com/SimulatedGREG/electron-vue)@[8fae476](https://github.com/SimulatedGREG/electron-vue/tree/8fae4763e9d225d3691b627e83b9e09b56f6c935) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about the original structure can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).

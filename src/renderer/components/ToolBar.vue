@@ -13,9 +13,9 @@
         <el-menu-item index="2-2">Playlists</el-menu-item>
         <el-submenu index="2-4">
           <template slot="title">Account</template>
-          <el-menu-item index="2-4-1" :style="{ color: warnColor }">Logout</el-menu-item>
-          <el-menu-item index="2-4-2">item two</el-menu-item>
-          <el-menu-item index="2-4-3">item three</el-menu-item>
+          <el-menu-item index="2-4-1">Your Profile</el-menu-item>
+          <el-menu-item index="2-4-2" :style="{}">Report a Bug</el-menu-item>
+          <el-menu-item index="2-4-3" :style="{ color: warnColor }">Logout</el-menu-item>
         </el-submenu>
       </el-submenu>
       <el-menu-item index="4" @click="openURL('https://github.com/Secr3ts/Solo')">About Solo</el-menu-item>
