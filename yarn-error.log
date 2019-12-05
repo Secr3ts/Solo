@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Yarn\bin\yarn.js add -D fs-extra
+  C:\Program Files\nodejs\node.exe C:\Yarn\bin\yarn.js
 
 PATH: 
   C:\ProgramData\Boxstarter;C:\Python27\;C:\Python27\Scripts;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Python27\python.exe;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Gradle\gradle-5.0\bin;C:\Users\Secr3ts\AppData\Local\Programs\Python\Python37;C:\Program Files (x86)\WinSCP\;C:\cmder;C:\Program Files\PuTTY\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\NuGet;C:\Program Files\heroku\bin;C:\Program Files\Java\jdk1.8.0_221\bin;C:\Users\Secr3ts\AppData\Local\Programs\Git\bin;C:\Program Files\Microsoft VS Code\bin;C:\dev\Go\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Yarn\bin\;C:\Program Files\nodejs\;C:\Users\Secr3ts\AppData\Roaming\npm\;C:\Users\Secr3ts\AppData\Roaming\npm\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Python27\python.exe;C:\Program Files\dotnet\;C:\Gradle\gradle-5.0\bin;C:\Users\Secr3ts\AppData\Local\Programs\Python\Python37;C:\Program Files (x86)\WinSCP\;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\NuGet;C:\Program Files\heroku\bin;C:\Users\Secr3ts\AppData\Local\Programs\Python\Py;C:\Users\Secr3ts\Desktop\Utility\ncat;C:\Users\Secr3ts\go\bin;C:\Users\Secr3ts\AppData\Local\Programs\Fiddler;C:\Users\Secr3ts\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\Sercrets\Git\bin\cmd;C:\Users\Secr3ts\AppData\Local\Yarn\bin;C:\Users\Secr3ts\AppData\Roaming\npm;C:\Users\Secr3ts\AppData\Roaming\npm\bin;
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/core-js/-/core-js-2.6.10.tgz: ESOCKETTIMEDOUT
+  Error: https://registry.yarnpkg.com/accessibility-developer-tools/-/accessibility-developer-tools-2.12.0.tgz: ESOCKETTIMEDOUT
       at ClientRequest.<anonymous> (C:\Yarn\lib\cli.js:141191:19)
       at Object.onceWrapper (events.js:273:13)
       at ClientRequest.emit (events.js:182:13)
@@ -45,7 +45,8 @@ npm manifest:
       "pack": "npm run pack:main && npm run pack:renderer",
       "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
       "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
-      "postinstall": "npm run lint:fix"
+      "postinstall": "npm run lint:fix",
+      "git": "git add . && git commit -m 'Changed.' && git push -u origin master"
     },
     "build": {
       "productName": "solo",
@@ -96,6 +97,7 @@ npm manifest:
     },
     "devDependencies": {
       "ajv": "^6.5.0",
+      "animejs": "^3.1.0",
       "babel-core": "^6.26.3",
       "babel-eslint": "^8.2.3",
       "babel-loader": "^7.1.4",
@@ -125,7 +127,9 @@ npm manifest:
       "eslint-plugin-promise": "^3.8.0",
       "eslint-plugin-standard": "^3.1.0",
       "file-loader": "^1.1.11",
+      "fs-extra": "^8.1.0",
       "html-webpack-plugin": "^3.2.0",
+      "init-solo-conf": "^1.0.0",
       "jquery": "^3.4.1",
       "materialize-css": "^1.0.0-rc.2",
       "mini-css-extract-plugin": "0.4.0",
@@ -135,11 +139,14 @@ npm manifest:
       "node-sass": "^4.9.2",
       "querystring": "^0.2.0",
       "sass-loader": "^7.0.3",
+      "scrollreveal": "^4.0.5",
       "simplebar": "^5.0.7",
       "style-loader": "^0.21.0",
       "url-loader": "^1.0.1",
       "uuid": "^3.3.3",
+      "v-tooltip": "^2.0.2",
       "vee-validate": "^3.0.11",
+      "vue-animejs": "^2.1.1",
       "vue-html-loader": "^1.2.4",
       "vue-loader": "^15.2.4",
       "vue-material": "^1.0.0-beta-11",

@@ -27,9 +27,6 @@ export default {
     }
   },
   methods: {
-    setSDwidth () {
-      return null
-    }
   },
   components: {
     'logoHome': LogoHome,

@@ -16,6 +16,9 @@ export default {
     }
   }
 }
+
+// TODO
+/* Find a decent way to implement breadcrumb */
 </script>
 
 <style>

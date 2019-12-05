@@ -15,9 +15,8 @@ import KeenUI from 'keen-ui'
 
 import VueAnime from 'vue-animejs'
 
-import { MdButton, MdToolbar } from 'vue-material/dist/components'
-
-import VTooltip from 'v-tooltip'
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.min.css'
 
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
@@ -28,12 +27,9 @@ Vue.config.devtools = process.env.NODE_ENV !== 'production'
 Vue.use(ElementUI)
 Vue.use(VueAnime)
 
-Vue.use(MdButton)
-Vue.use(MdToolbar)
-
 Vue.use(KeenUI)
 
-Vue.use(VTooltip)
+Vue.use(VueMaterial)
 
 /* eslint-disable no-new */
 new Vue({

@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <toolBar></toolBar>
-    <breadCrumb></breadCrumb>
+    <!--breadCrumb-- class="breadCrumb"></!--breadCrumb-->
   </div>
 </template>
 
@@ -19,4 +19,9 @@ export default {
 </script>
 
 <style>
+  .breadCrumb {
+    position: relative;
+    top: 9px;
+  }
+  
 </style>

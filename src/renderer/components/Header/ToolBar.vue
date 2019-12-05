@@ -6,7 +6,7 @@
       menu-trigger="click"
       @select="handleSelect"
       :active-text-color="scColor">
-      <el-menu-item index="1" class="li-1 center-align">Solo</el-menu-item>
+      <el-menu-item index="1" class="li-1 center-align" @click="slClicked">Solo</el-menu-item>
       <el-submenu index="2">
         <template slot="title">Soundcloud</template>
         <el-menu-item index="2-1">Likes</el-menu-item>
@@ -41,6 +41,9 @@ export default {
     },
     openURL (url) {
       shell.openExternal(url)
+    },
+    slClicked () {
+      this.$router.push('/')
     }
   }
 }
