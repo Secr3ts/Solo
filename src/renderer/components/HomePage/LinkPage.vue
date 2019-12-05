@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  // @import "./settings.scss";
+  @import "./settings.scss";
   @import "~element-ui/packages/theme-chalk/src/button";
   @import "~element-ui/packages/theme-chalk/src/button-group";
   .batButton { width: 125px; }
