@@ -30,6 +30,10 @@ export default {
       ]
     }
   },
+  components: {
+    'el-carousel': Carousel,
+    'el-carousel-item': CarouselItem
+  }
 }
 </script>
 
