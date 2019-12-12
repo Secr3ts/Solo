@@ -1,5 +1,8 @@
 # Solo App
 
+# Note:
+  This Client is no longer maintained till [Soundcloud](https://soundcloud.com) adds a way to interact with their new api.
+
 > A simple Soundcloud Desktop Client.
 
 ## Why ? 

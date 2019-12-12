@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="container input-wrapper">
-      <div class="row">
+      <div class="row row-redux">
         <div class="col s2"></div>
         <div class="col s8">
           <md-field md-clearable>
@@ -26,5 +26,10 @@ export default {
 <style>
   input, input::placeholder {
     text-align: center
+  }
+
+  .row-redux {
+    position: relative;
+    bottom: -15px
   }
 </style>

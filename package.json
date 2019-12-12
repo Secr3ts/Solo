@@ -112,6 +112,7 @@
     "sass-loader": "^7.0.3",
     "scrollreveal": "^4.0.5",
     "simplebar": "^5.0.7",
+    "soundcloud-api-client": "0.0.9",
     "style-loader": "^0.21.0",
     "url-loader": "^1.0.1",
     "uuid": "^3.3.3",

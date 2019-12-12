@@ -18,6 +18,11 @@ import VueAnime from 'vue-animejs'
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.min.css'
 
+// Firebase
+
+import * as firebase from 'firebase/app'
+import 'firebase/database'
+
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
 Vue.config.productionTip = false
@@ -30,6 +35,21 @@ Vue.use(VueAnime)
 Vue.use(KeenUI)
 
 Vue.use(VueMaterial)
+
+const firebaseConfig = {
+  apiKey: 'AIzaSyC_CG3k95cs90JHRXFcvqnbEgfoWslaD1c',
+  authDomain: 'solo-1511.firebaseapp.com',
+  databaseURL: 'https://solo-1511.firebaseio.com',
+  projectId: 'solo-1511',
+  storageBucket: 'solo-1511.appspot.com',
+  messagingSenderId: '287043640624',
+  appId: '1:287043640624:web:84788b14d19a51f84d7cf5',
+  measurementId: 'G-2BHHGEM9PP'
+}
+
+firebase.initializeApp(firebaseConfig)
+
+Vue.prototype.$db = firebase.database()
 
 /* eslint-disable no-new */
 new Vue({

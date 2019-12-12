@@ -17,22 +17,23 @@
 
 <script>
 import { Carousel, CarouselItem } from 'element-ui'
+import { setId, getTrack } from './Carousel/api'
 
 export default {
   name: 'carousel',
-  data() {
+  data () {
     return {
       coverSize: '500px',
-      covers: [
-        {
-          img: ''
-        }
-      ]
+      sid: 'Vu5tlmvC9eCLFZkxXG32N1yQMfDSAPAA'
     }
   },
   components: {
     'el-carousel': Carousel,
     'el-carousel-item': CarouselItem
+  },
+  mounted () {
+    setId(this.$data.sid)
+    getTrack('582888273')
   }
 }
 </script>

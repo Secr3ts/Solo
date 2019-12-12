@@ -1,12 +1,13 @@
 <template>
   <div class="wrapper">
-    <appHeader></appHeader>
+    <appHeader style="position: fixed"></appHeader>
+    <div class="section" style="height: 40px"></div>
     <inputField></inputField>
     <div class="container">
-      <h4 class="center-align">Search on the widest Music Platform.</h4>
+      <h5 class="center-align">Search on the widest Music Platform.</h5>
       <div class="section">
         <div class="divider" :style="{ 'background-color': scColor }"></div>
-        <carousel></carousel>
+        <carousel class="carousel"></carousel>
       </div>
     </div>
   </div>
@@ -23,7 +24,7 @@ export default {
     'appHeader': Header,
     'inputField': InputField,
     'carousel': Carousel
-},
+  },
   data () {
     return {
       scColor: this.$parent.scColor
@@ -33,4 +34,12 @@ export default {
 </script>
 
 <style>
+  .carousel {
+    position: relative;
+    margin-top: 20px
+  }
+
+  body {
+    overflow: hidden;
+  }
 </style>
