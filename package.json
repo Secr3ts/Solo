@@ -107,7 +107,7 @@
     "moment": "^2.24.0",
     "multispinner": "^0.2.1",
     "node-loader": "^0.6.0",
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.13.1",
     "querystring": "^0.2.0",
     "sass-loader": "^7.0.3",
     "scrollreveal": "^4.0.5",
